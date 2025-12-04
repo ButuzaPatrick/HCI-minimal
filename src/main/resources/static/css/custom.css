@@ -50,7 +50,7 @@
    Focus Indicators (WCAG 2.4.7)
    ======================================== */
 *:focus {
-  outline: 3px solid #4A90E2;
+  outline: 3px solid black;
   outline-offset: 2px;
 }
 
@@ -60,7 +60,7 @@ a:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 3px solid #4A90E2;
+  outline: 3px solid black;
   outline-offset: 2px;
 }
 
@@ -149,6 +149,9 @@ select:focus {
 /* ========================================
    Task List
    ======================================== */
+
+
+
 .task-list {
   list-style: none;
   padding: 0;
@@ -161,8 +164,7 @@ select:focus {
   border: 1px solid var(--pico-muted-border-color, #ddd);
   border-radius: 4px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   gap: 1rem;
   transition: background-color 150ms ease;
 }
@@ -187,6 +189,7 @@ select:focus {
 
 .task-content {
   flex: 1;
+  margin-bottom: 1rem;
   min-width: 0; /* Allow text truncation */
 }
 
@@ -194,6 +197,7 @@ select:focus {
   display: block;
   font-weight: 500;
   margin-bottom: 0.25rem;
+  padding-bottom: 50px !important;
   word-wrap: break-word;
 }
 

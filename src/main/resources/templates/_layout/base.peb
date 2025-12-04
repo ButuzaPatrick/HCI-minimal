@@ -52,8 +52,40 @@
     /* Override Pico.css button color for WCAG 1.4.3 AA compliance */
     button[type="submit"],
     button {
-      color: white !important; /* White text on blue background for better contrast */
+      color: black !important; /* White text on blue background for better contrast */
+      background-color: rgb(202, 202, 202) !important;
     }
+
+    #edit-button {
+      background-color: white !important;
+      color: black !important;
+      border: 0;
+      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      border-radius: 100px;
+      width: 70%;
+    }
+
+    #delete-button {
+      background-color: red !important;
+      color: white !important;
+      border: 0;
+      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      border-radius: 100px;
+      width: 20%;
+    }
+
+    .task-view {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .button-choices {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
   </style>
 </head>
 <body>
