@@ -28,6 +28,7 @@
        hx-get="/tasks/{{ task.id }}/view"
        hx-target="#task-{{ task.id }}"
        hx-swap="outerHTML"
+       id="cancel-button"
        role="button">Cancel</a>
   </form>
 </li>
